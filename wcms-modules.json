@@ -3,11 +3,11 @@
     "themes": {
         "etbgreen": {
             "name": "etbgreen",
-            "repo": "https://github.com/peantz/etb-green/tree/master",
-            "zip": "https://github.com/peantz/etb-green/archive/master.zip",
+            "repo": "https://github.com/peantz/etb-green/tree/main",
+            "zip": "https://github.com/peantz/etb-green/archive/main.zip",
             "summary": "LimeGreen WonderCMS theme (2022). Theme works without Bootstrap and jQuery.",
             "version": "3.2.3",
-            "image": "https://raw.githubusercontent.com/peantz/etb-green/master/preview.jpg"
+            "image": "https://raw.githubusercontent.com/peantz/etb-green/main/preview.jpg"
         }
     }
 }
