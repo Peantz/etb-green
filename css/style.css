@@ -41,8 +41,8 @@ section, summary, time, mark, audio, video {
 html, body, inner, wrapper {
     background: linear-gradient(120deg, 
                                 #000000 0%, 
-                                #0a0a0a 20%, 
-                                #1a1a1a 40%, 
+                                #565656 20%, 
+                                #565656 40%, 
                                 #32CD32 80%, 
                                 #32CD32 100%);
     background-size: cover; /* Hintergrund vollständig abdecken */
@@ -316,7 +316,6 @@ a:hover {
 				}
 			}
 		.wrapper.style2 {
-			background-color: #5052b5
 		}
 		
 		.wrapper.fullscreen {
