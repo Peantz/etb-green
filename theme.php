@@ -43,14 +43,14 @@
 
 <section id="topMenu">
     <div class="inner">
+        <!-- Logo hinzufügen -->
+        <div class="logo">
+            <a href="<?= $Wcms->url() ?>">
+                <img src="<?= $Wcms->asset('img/logo.png') ?>" alt="Logo">
+            </a>
+        </div>
         <nav>
             <ul class="menu">
-                <!-- Logo hinzufügen -->
-                <li class="logo">
-                    <a href="<?= $Wcms->url() ?>">
-                        <img src="<?= $Wcms->asset('img/logo.png') ?>" alt="Logo">
-                    </a>
-                </li>
                 <!-- Menü -->
                 <?= $Wcms->menu() ?>
             </ul>
