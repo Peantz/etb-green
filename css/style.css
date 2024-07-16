@@ -596,3 +596,34 @@ footer {
 	.menu li > a:only-child:after {
 		content: ''
 	}
+/* Styling für den Burger-Button */
+.burger {
+    display: none;
+}
+
+#menuItems {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Menü auf mobilen Geräten ausblenden */
+@media screen and (max-width: 736px) {
+    .burger {
+        display: block;
+    }
+
+    #menuItems {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    #menuItems.active {
+        display: flex;
+    }
+
+    #topMenu nav > ul > li {
+        margin: 0;
+    }
+}
