@@ -610,6 +610,7 @@ footer {
 @media screen and (max-width: 736px) {
     .burger {
         display: block;
+        cursor: pointer;
     }
 
     #menuItems {
@@ -617,6 +618,10 @@ footer {
         flex-direction: column;
         width: 100%;
         text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 5em; /* Setzen Sie dies auf die Höhe des Headers */
+        left: 0;
     }
 
     #menuItems.active {
@@ -625,5 +630,19 @@ footer {
 
     #topMenu nav > ul > li {
         margin: 0;
+    }
+
+    #topMenu nav ul.menu {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #topMenu .logo {
+        margin-right: auto;
+    }
+
+    #topMenu .burger {
+        margin-left: auto;
     }
 }
