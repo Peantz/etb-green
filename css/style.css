@@ -262,12 +262,14 @@ input[type="password"] {
     width: 300px;
 }
 
+/* Footer Container */
+.wrapper.style2, .inner, .footer-container {
+    background-color: #565656;
+}
+
 /* Wrapper */
 .wrapper {
     position: relative;
-}
-.wrapper.style2 {
-    background-color: #565656;
 }
 .wrapper > .inner {
     width: 100%;
