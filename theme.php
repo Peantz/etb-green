@@ -2,88 +2,90 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Encoding, browser compatibility, viewport -->
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <!-- Encoding, browser compatibility, viewport -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- Search Engine Optimization (SEO) -->
-		<meta name="title" content="<?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?>" />
-		<meta name="description" content="<?= $Wcms->page('description') ?>">
-		<meta name="keywords" content="<?= $Wcms->page('keywords') ?>">
-		<meta property="og:url" content="<?= $Wcms->getCurrentPageUrl() ?>" />
-		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="<?= $Wcms->get('config', 'siteTitle') ?>" />
-		<meta property="og:title" content="<?= $Wcms->page('title') ?>" />
-		<meta name="twitter:title" content="<?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?>" />
-		<meta name="twitter:description" content="<?= $Wcms->page('description') ?>" />
+    <!-- Search Engine Optimization (SEO) -->
+    <meta name="title" content="<?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?>" />
+    <meta name="description" content="<?= $Wcms->page('description') ?>">
+    <meta name="keywords" content="<?= $Wcms->page('keywords') ?>">
+    <meta property="og:url" content="<?= $Wcms->getCurrentPageUrl() ?>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="<?= $Wcms->get('config', 'siteTitle') ?>" />
+    <meta property="og:title" content="<?= $Wcms->page('title') ?>" />
+    <meta name="twitter:title" content="<?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?>" />
+    <meta name="twitter:description" content="<?= $Wcms->page('description') ?>" />
 
-		<!-- Website and page title -->
-		<title>
-			<?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?>
-		</title>
+    <!-- Website and page title -->
+    <title>
+        <?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?>
+    </title>
 
-		<!-- Admin CSS -->
-		<?= $Wcms->css() ?>
+    <!-- Admin CSS -->
+    <?= $Wcms->css() ?>
 
-		<!-- External CSS Links -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- External CSS Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-		<!-- Theme CSS -->
-		<link rel="stylesheet" rel="preload" as="style" href="<?= $Wcms->asset('css/style.css') ?>">
-	</head>
-	
-	<body>
-		<!-- Admin settings panel and alerts -->
-		<?= $Wcms->settings() ?>
+    <!-- Theme CSS -->
+    <link rel="stylesheet" rel="preload" as="style" href="<?= $Wcms->asset('css/style.css') ?>">
+</head>
 
-		<?= $Wcms->alerts() ?>
+<body>
+    <!-- Admin settings panel and alerts -->
+    <?= $Wcms->settings() ?>
 
-<section id="topMenu">
-    <div class="inner">
-        <nav>
-            <ul class="menu">
+    <?= $Wcms->alerts() ?>
+
+    <section id="topMenu" class="bg-dark text-light py-3">
+        <div class="container">
+            <div class="d-flex align-items-center">
                 <!-- Logo hinzufügen -->
-                <li class="logo">
-                    <a href="<?= $Wcms->url() ?>">
-                        <img src="<?= $Wcms->asset('img/logo.png') ?>" alt="Logo">
-                    </a>
-                </li>
+                <a class="navbar-brand" href="<?= $Wcms->url() ?>">
+                    <img src="<?= $Wcms->asset('img/logo.png') ?>" alt="Logo" class="img-fluid" style="max-height: 50px;">
+                </a>
                 <!-- Menü -->
-                <?= $Wcms->menu() ?>
-            </ul>
-        </nav>
+                <nav class="ms-auto">
+                    <ul class="navbar-nav d-flex flex-row">
+                        <?= $Wcms->menu() ?>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <div id="wrapper" class="bg-dark text-light">
+        <section id="intro" class="wrapper style1 fullscreen">
+            <div class="container py-5">
+                <!-- Main content for each page -->
+                <?= $Wcms->page('content') ?>
+            </div>
+        </section>
+
+        <section class="wrapper style2 bg-secondary text-light">
+            <div class="container py-5">
+                <!-- Static editable block, same on each page -->
+                <?= $Wcms->block('subside') ?>
+            </div>
+        </section>
     </div>
-</section>
 
+    <footer class="wrapper style2 bg-dark text-light">
+        <div class="container py-3">
+            <!-- Footer -->
+            <?= $Wcms->footer() ?>
+        </div>
+    </footer>
 
+    <!-- Admin JavaScript. More JS libraries can be added below -->
+    <?= $Wcms->js() ?>
 
-		<div id="wrapper">
-			<section id="intro" class="wrapper style1 fullscreen">
-				<div class="inner">
-					<!-- Main content for each page -->
-					<?= $Wcms->page('content') ?>
-				</div>
-			</section>
-
-			<section class="wrapper style2">
-				<div class="inner">
-					<!-- Static editable block, same on each page -->
-					<?= $Wcms->block('subside') ?>
-				</div>
-			</section>
-		</div>
-
-		<footer class="wrapper style2">
-			<div class="inner">
-				<!-- Footer -->
-				<?= $Wcms->footer() ?>
-			</div>
-		</footer>
-
-		<!-- Admin JavaScript. More JS libraries can be added below -->
-		<?= $Wcms->js() ?>
-	</body>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBhC3ANr3bbfn1pqaFb4Fw/jpEj9Da9bzS0zZ9N4pGvi3P2s" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-8ODF9WXbFPUJzIWC9jK/rA8fQQBR46JNk2eUKg5HCr0EkTj5PDRm6zHYdNm1HgU7" crossorigin="anonymous"></script>
+</body>
 </html>
