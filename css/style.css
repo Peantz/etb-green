@@ -38,7 +38,6 @@ section, summary, time, mark, audio, video {
     vertical-align: baseline;
 }
 html, body, .inner, .wrapper {
-    background: linear-gradient(120deg, #000000 0%, #565656 20%, #565656 40%, #32CD32 80%, #32CD32 100%);
     background-size: cover;
     min-height: 100%;
     font-family: 'Catamaran', sans-serif;
