@@ -59,12 +59,13 @@
             </div>
         </section>
 
-        <section class="wrapper style2">
+        <!-- Static editable block, same on each page -->
+        <!--<section class="wrapper style2">
             <div class="inner">
-                <!-- Static editable block, same on each page -->
-                <?= $Wcms->block('subside') ?>
+
+                <<?= $Wcms->block('subside') ?>
             </div>
-        </section>
+        </section>-->
     </div>
 
     <footer class="wrapper style2">
