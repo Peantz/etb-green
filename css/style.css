@@ -599,6 +599,7 @@ footer {
 /* Styling für den Burger-Button */
 .burger {
     display: none;
+    cursor: pointer;
 }
 
 #menuItems {
@@ -610,7 +611,6 @@ footer {
 @media screen and (max-width: 736px) {
     .burger {
         display: block;
-        cursor: pointer;
     }
 
     #menuItems {
@@ -622,17 +622,14 @@ footer {
         position: absolute;
         top: 5em; /* Setzen Sie dies auf die Höhe des Headers */
         left: 0;
+        padding: 10px 0;
     }
 
     #menuItems.active {
         display: flex;
     }
 
-    #topMenu nav > ul > li {
-        margin: 0;
-    }
-
-    #topMenu nav ul.menu {
+    #topMenu nav > ul.menu {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
