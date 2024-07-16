@@ -354,11 +354,11 @@ a:hover {
     cursor: default;
     height: 5.4em;
     left: 0;
-    text-align: left;
+    text-align: center;
     top: 0;
     width: 100%;
     line-height: 3.5em;
-    position: relative;
+    position: sticky;
     z-index: 20;
 }
 
@@ -371,7 +371,7 @@ a:hover {
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		-moz-justify-content: center;
+		-moz-justify-content: left;
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
