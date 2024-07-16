@@ -51,12 +51,21 @@
                         <img src="<?= $Wcms->asset('img/logo.png') ?>" alt="Logo">
                     </a>
                 </li>
+                <!-- Burger-Button -->
+                <li class="burger">
+                    <a href="javascript:void(0);" onclick="toggleMenu()">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </li>
                 <!-- Menü -->
-                <?= $Wcms->menu() ?>
+                <div id="menuItems" class="menu-items">
+                    <?= $Wcms->menu() ?>
+                </div>
             </ul>
         </nav>
     </div>
 </section>
+
 
 
 
