@@ -554,7 +554,8 @@ footer {
 
 	#topMenu .nav-item {
 		margin-top: 5px;
-		background: black;
+		background: #32cd32;
+		opacity: 50;
 	}
 
 	ul.subPageDropdown {
@@ -596,59 +597,3 @@ footer {
 	.menu li > a:only-child:after {
 		content: ''
 	}
-/* Styling für den Burger-Button */
-.burger {
-    display: none;
-    cursor: pointer;
-}
-
-#menuItems {
-    display: flex;
-    flex-direction: row;
-}
-
-/* Menü auf mobilen Geräten ausblenden */
-@media screen and (max-width: 736px) {
-    .burger {
-        display: block;
-    }
-
-    #menuItems {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.8);
-        position: absolute;
-        top: 5em; /* Setzen Sie dies auf die Höhe des Headers */
-        left: 0;
-        padding: 10px 0;
-    }
-
-    #menuItems.active {
-        display: flex;
-    }
-
-    #topMenu nav > ul.menu {
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    #topMenu .logo {
-        margin-right: auto;
-    }
-
-    #topMenu .burger {
-        margin-left: auto;
-    }
-
-    #topMenu .menu-items li {
-        padding: 10px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    #topMenu .menu-items li:last-child {
-        border-bottom: none;
-    }
-}
