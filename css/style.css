@@ -262,11 +262,6 @@ input[type="password"] {
     width: 300px;
 }
 
-/* Footer Container */
-.wrapper.style2, .footer-container {
-    background-color: #565656;
-}
-
 /* Wrapper */
 .wrapper {
     position: relative;
@@ -300,7 +295,7 @@ input[type="password"] {
 /* Menu */
 #topMenu {
     padding: 1em 0;
-    background-color: #565656;
+    background-color: #333;
     cursor: default;
     text-align: center;
     width: 100%;
@@ -391,3 +386,4 @@ input[type="password"] {
     #topMenu nav ul li ul li a {
         padding-left: 2em;
     }
+}
