@@ -366,7 +366,7 @@ a:hover {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: inherit;
+		display: flex;
 		-moz-flex-direction: row;
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
