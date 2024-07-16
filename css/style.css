@@ -556,7 +556,9 @@ footer {
 		margin-top: 5px;
 		background: transparent;
 	}
-
+	#topMenu .nav-link {
+		color: #32cd32;
+	}
 	ul.subPageDropdown {
 		visibility: hidden;
 		opacity: 0;
