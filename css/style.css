@@ -642,4 +642,13 @@ footer {
     #topMenu .burger {
         margin-left: auto;
     }
+
+    #topMenu .menu-items li {
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    #topMenu .menu-items li:last-child {
+        border-bottom: none;
+    }
 }
