@@ -469,6 +469,23 @@ a:hover {
 				font-size: 1em
 			}
 		}
+/* Logo-Styling */
+#topMenu .logo {
+    margin-right: auto; /* Schiebt das Logo nach links */
+}
+
+#topMenu .logo img {
+    max-height: 50px; /* Maximale Höhe des Logos */
+    height: auto;
+    width: auto;
+}
+
+@media screen and (max-width: 736px) {
+    #topMenu .logo img {
+        max-height: 40px; /* Anpassung der Logo-Größe für kleinere Bildschirme */
+    }
+}
+
 
 /* Intro */
 		#intro p {
