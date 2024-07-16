@@ -348,19 +348,19 @@ a:hover {
 	}
 
 /* Menu */
-	#topMenu {
-		padding: 0;
-		background:0;
-		cursor: default;
-		height: 5.4em;
-		left: 0;
-		text-align: center;
-		top: 0;
-		width: 100%;
-		line-height: 3.5em;
-		position: relative;
-		z-index: 20
-	}
+#topMenu {
+    padding: 0;
+    background-color: #000; /* Schwarzer Hintergrund */
+    cursor: default;
+    height: 5.4em;
+    left: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    line-height: 3.5em;
+    position: relative;
+    z-index: 20;
+}
 
 	#topMenu > .inner {
 		display: -moz-flex;
@@ -416,28 +416,29 @@ a:hover {
 				line-height: inherit
 			}
 
-		#topMenu nav a {
-			border: 0;
-			font-size: 0.70em;
-			font-weight: bold;
-			letter-spacing: 0.25em;
-			line-height: 1.75;
-			outline: 0;
-			padding: 2em 0;
-			position: relative;
-			text-decoration: none;
-			text-transform: uppercase
-		}
-		#topMenu nav li.active, nav li.active a	{
-			color: #fff !important
-		}
+#topMenu nav a {
+    border: 0;
+    font-size: 0.70em;
+    font-weight: bold;
+    letter-spacing: 0.25em;
+    line-height: 1.75;
+    outline: 0;
+    padding: 2em 0;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff; /* Weiße Schriftfarbe */
+}
+#topMenu nav li.active, #topMenu nav li.active a {
+    color: #fff !important;
+}
 			#topMenu nav .active a{
 				border-bottom: 1px solid #ffffff7d
 			}
-			#topMenu nav a:hover {
-				border-bottom: 1px solid #ffffff59
-
-			}
+#topMenu nav a:hover {
+    border-bottom: 1px solid #ffffff59;
+    color: #fff; /* Weiße Schriftfarbe beim Hover */
+}
 			#topMenu nav a.active {
 				color: #ffffff
 			}
