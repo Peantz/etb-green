@@ -265,6 +265,7 @@ input[type="password"] {
 /* Wrapper */
 .wrapper {
     position: relative;
+    padding-top: 70px; /* Ensure content is not hidden behind navbar */
 }
 .wrapper > .inner {
     width: 100%;
@@ -294,18 +295,18 @@ input[type="password"] {
 
 /* Menu */
 #topMenu {
-    padding: 1em 0;
+    padding: 0.5em 0;
     background-color: #333;
     cursor: default;
     text-align: center;
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 20;
 }
 
 #topMenu .container {
-    display: block ruby;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
