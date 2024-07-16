@@ -471,13 +471,29 @@ a:hover {
 		}
 /* Logo-Styling */
 #topMenu .logo {
-    margin-right: auto; /* Schiebt das Logo nach links */
+    position: absolute; /* Absolut positionieren */
+    left: 0; /* Ganz nach links */
+    top: 50%; /* Vertikal zentrieren */
+    transform: translateY(-50%); /* Korrektur für vertikale Zentrierung */
+    margin-left: 10px; /* Optionaler Abstand vom Rand */
 }
 
 #topMenu .logo img {
     max-height: 50px; /* Maximale Höhe des Logos */
     height: auto;
     width: auto;
+}
+
+#topMenu .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Um das absolute Positionieren des Logos zu ermöglichen */
+}
+
+#topMenu nav {
+    flex: 1;
+    text-align: center; /* Zentriert das Menü */
 }
 
 @media screen and (max-width: 736px) {
