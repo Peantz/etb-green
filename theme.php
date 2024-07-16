@@ -78,4 +78,7 @@
     <?= $Wcms->js() ?>
 
     <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBhC3ANr3bbfn1pqaFb4Fw/jpEj9Da9bzS0zZ9N4pGvi3P
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBhC3ANr3bbfn1pqaFb4Fw/jpEj9Da9bzS0zZ9N4pGvi3P2s" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-8ODF9WXbFPUJzIWC9jK/rA8fQQBR46JNk2eUKg5HCr0EkTj5PDRm6zHYdNm1HgU7" crossorigin="anonymous"></script>
+</body>
+</html>
