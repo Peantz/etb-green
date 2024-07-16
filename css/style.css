@@ -445,23 +445,22 @@ a:hover {
 					max-width: 100%
 				}
 
-		@media screen and (max-width: 736px) {
-			#topMenu {
-				height: auto;
-				font-size: 0.94em;
-				position: relative;
-				background-color: rgba(0, 0, 0, 0.30);
-				padding-bottom: 20px
-			}
+@media screen and (max-width: 736px) {
+    #topMenu nav ul {
+        display: block;
+        float: left;
+        width: 100%; /* Stellt sicher, dass das Menü die gesamte Breite einnimmt */
+    }
 			#topMenu nav ul {
 				display: block;
 				float: left
 			}
-			#topMenu nav > ul > li {
-				display: block;
-				float: left;
-				margin: 0 1em 0 2em
-			}
+    #topMenu nav > ul > li {
+        display: block;
+        float: left;
+        margin: 0 1em 0 1em;
+        width: 100%; /* Stellt sicher, dass die Menüpunkte die gesamte Breite einnehmen */
+    }
 			#topMenu nav .active a {
 				border-bottom: 1px solid #fff
 			}
@@ -530,6 +529,7 @@ footer {
 	}
 
 	.subPageDropdown li {
+		        width: 100%; /* Stellt sicher, dass die Submenüpunkte die gesamte Breite einnehmen */
 		color: #fff;
 		display: block;
 		float: left;
@@ -574,8 +574,15 @@ footer {
 		opacity: 1;
 		display: block
 	}
-
+    #topMenu ul li ul {
+        position: relative;
+        left: 0;
+        width: 100%; /* Stellt sicher, dass das Submenü die gesamte Breite einnimmt */
+        box-sizing: border-box; /* Stellt sicher, dass das Padding berücksichtigt wird */
+    }
 	#topMenu ul li ul li {
+		        width: 100%; /* Stellt sicher, dass die Submenüpunkte die gesamte Breite einnehmen */
+
 		clear: both;
 		text-align: left;
 		background-color: rgba(0, 0, 0, 0.30);
