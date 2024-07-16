@@ -266,6 +266,9 @@ input[type="password"] {
 .wrapper {
     position: relative;
 }
+.wrapper.style2 {
+    background-color: #565656;
+}
 .wrapper > .inner {
     width: 100%;
     padding: 5em 4em 2em 4em;
