@@ -37,8 +37,8 @@ section, summary, time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
-
-html, body, .inner, .wrapper {
+<!--, .inner, .wrapper -->
+html, body { 
     background: #f8f9fa;
     min-height: 100%;
     font-family: 'Catamaran', sans-serif;
