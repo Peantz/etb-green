@@ -275,6 +275,9 @@ input[type="password"] {
         padding: 2em 4em 2em 4em !important;
     }
 }
+.wrapper.style2 {
+	background-color: #5052b5
+}
 @media screen and (max-width: 736px) {
     .wrapper > .inner {
         padding: 2em 2em 2em 2em;
