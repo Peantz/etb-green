@@ -318,6 +318,7 @@ a:hover {
 				}
 			}
 		.wrapper.style2 {
+			background-color: #565656;
 		}
 		
 		.wrapper.fullscreen {
@@ -350,7 +351,7 @@ a:hover {
 /* Menu */
 #topMenu {
     padding: 0;
-    background-color: #000; /* Schwarzer Hintergrund */
+    background-color: #565656; /* Grauer Hintergrund */
     cursor: default;
     height: 5.4em;
     left: 0;
