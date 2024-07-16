@@ -45,8 +45,8 @@ html, body, inner, wrapper {
                                 #565656 40%, 
                                 #32CD32 80%, 
                                 #32CD32 100%);*/
-	
-            background: linear-gradient(to bottom, #000000, #B0D235); /* Beispiel Farbverlauf von Schwarz zu Grün */
+
+    /*background: linear-gradient(to bottom, #000000, #B0D235); /* Beispiel Farbverlauf von Schwarz zu Grün */
     background-size: cover; /* Hintergrund vollständig abdecken */
     min-height: 100%;
     font-family: 'Catamaran';
