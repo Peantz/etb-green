@@ -557,7 +557,12 @@ footer {
 		background: transparent;
 	}
 	#topMenu .nav-link {
-		color: #32cd32;
+    background-color: #ffcc00; /* Beispiel-Hintergrundfarbe */
+    color: #000; /* Textfarbe */
+    font-weight: bold; /* Fettgedruckter Text */
+    text-decoration: underline; /* Unterstrichener Text */
+    padding: 10px 15px; /* Innenabstand hinzufügen */
+    border-radius: 5px; /* Abgerundete Ecken */
 	}
 	ul.subPageDropdown {
 		visibility: hidden;
