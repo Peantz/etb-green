@@ -38,41 +38,37 @@
     <?= $Wcms->settings() ?>
     <?= $Wcms->alerts() ?>
 
-    <section id="topMenu" class="bg-dark text-light py-3">
+    <section id="topMenu">
         <div class="container">
-            <div class="d-flex align-items-center">
-                <!-- Logo hinzufügen -->
-                <a class="navbar-brand" href="<?= $Wcms->url() ?>">
-                    <img src="<?= $Wcms->asset('img/logo.png') ?>" alt="Logo" class="img-fluid" style="max-height: 50px;">
-                </a>
-                <!-- Menü -->
-                <nav class="ms-auto">
-                    <ul class="navbar-nav d-flex flex-row">
-                        <?= $Wcms->menu() ?>
-                    </ul>
-                </nav>
-            </div>
+            <a class="logo" href="<?= $Wcms->url() ?>">
+                <img src="<?= $Wcms->asset('img/logo.png') ?>" alt="Logo" class="img-fluid">
+            </a>
+            <nav>
+                <ul class="navbar-nav">
+                    <?= $Wcms->menu() ?>
+                </ul>
+            </nav>
         </div>
     </section>
 
-    <div id="wrapper" class="bg-dark text-light">
+    <div id="wrapper">
         <section id="intro" class="wrapper style1 fullscreen">
-            <div class="container py-5">
+            <div class="inner">
                 <!-- Main content for each page -->
                 <?= $Wcms->page('content') ?>
             </div>
         </section>
 
-        <section class="wrapper style2 bg-secondary text-light">
-            <div class="container py-5">
+        <section class="wrapper style2">
+            <div class="inner">
                 <!-- Static editable block, same on each page -->
                 <?= $Wcms->block('subside') ?>
             </div>
         </section>
     </div>
 
-    <footer class="wrapper style2 bg-dark text-light">
-        <div class="container py-3">
+    <footer class="wrapper style2">
+        <div class="inner">
             <!-- Footer -->
             <?= $Wcms->footer() ?>
         </div>
