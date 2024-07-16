@@ -41,30 +41,31 @@
 
     <?= $Wcms->alerts() ?>
 
-    <section id="topMenu">
-        <div class="inner">
-            <nav>
-                <ul class="menu">
-                    <!-- Logo hinzufügen -->
-                    <li class="logo">
-                        <a href="<?= $Wcms->url() ?>">
-                            <img src="<?= $Wcms->asset('img/logo.png') ?>" alt="Logo">
-                        </a>
-                    </li>
-                    <!-- Burger-Button -->
-                    <li class="burger">
-                        <a href="javascript:void(0);" onclick="toggleMenu()">
-                            <i class="fas fa-bars"></i>
-                        </a>
-                    </li>
-                    <!-- Menü -->
-                    <div id="menuItems" class="menu-items">
-                        <?= $Wcms->menu() ?>
-                    </div>
-                </ul>
-            </nav>
-        </div>
-    </section>
+<section id="topMenu">
+    <div class="inner">
+        <nav>
+            <ul class="menu">
+                <!-- Logo hinzufügen -->
+                <li class="logo">
+                    <a href="<?= $Wcms->url() ?>">
+                        <img src="<?= $Wcms->asset('img/logo.png') ?>" alt="Logo">
+                    </a>
+                </li>
+                <!-- Burger-Button -->
+                <li class="burger">
+                    <a href="javascript:void(0);" onclick="toggleMenu()">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- Menü -->
+            <ul id="menuItems" class="menu-items">
+                <?= $Wcms->menu() ?>
+            </ul>
+        </nav>
+    </div>
+</section>
+
 
     <div id="wrapper">
         <section id="intro" class="wrapper style1 fullscreen">
