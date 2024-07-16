@@ -20,9 +20,7 @@
     <meta name="twitter:description" content="<?= $Wcms->page('description') ?>" />
 
     <!-- Website and page title -->
-    <title>
-        <?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?>
-    </title>
+    <title><?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?></title>
 
     <!-- Admin CSS -->
     <?= $Wcms->css() ?>
@@ -38,7 +36,6 @@
 <body>
     <!-- Admin settings panel and alerts -->
     <?= $Wcms->settings() ?>
-
     <?= $Wcms->alerts() ?>
 
     <section id="topMenu" class="bg-dark text-light py-3">
