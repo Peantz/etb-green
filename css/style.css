@@ -470,35 +470,6 @@ a:hover {
 				font-size: 1em
 			}
 		}
-/* Logo-Styling */
-#topMenu .logo {
-    margin-right: auto; /* Schiebt das Logo nach links */
-    margin-left: 0;
-}
-
-#topMenu .logo img {
-    max-height: 50px; /* Maximale Höhe des Logos */
-    height: auto;
-    width: auto;
-}
-
-@media screen and (max-width: 736px) {
-    #topMenu .inner {
-        flex-direction: column; /* Ändert die Anordnung der Elemente auf Spaltenrichtung */
-    }
-
-    #topMenu .logo {
-        margin: 0 auto 10px auto; /* Zentriert das Logo und fügt unten etwas Abstand hinzu */
-        order: -1; /* Positioniert das Logo an erster Stelle */
-    }
-
-    #topMenu .logo img {
-        max-height: 40px; /* Anpassung der Logo-Größe für kleinere Bildschirme */
-    }
-}
-
-
-
 
 /* Intro */
 		#intro p {
@@ -605,3 +576,29 @@ footer {
 	.menu li > a:only-child:after {
 		content: ''
 	}
+/* Logo-Styling */
+#topMenu .logo {
+    margin-right: auto; /* Schiebt das Logo nach links */
+    margin-left: 0;
+}
+
+#topMenu .logo img {
+    max-height: 50px; /* Maximale Höhe des Logos */
+    height: auto;
+    width: auto;
+}
+
+@media screen and (max-width: 736px) {
+    #topMenu .inner {
+        flex-direction: column; /* Ändert die Anordnung der Elemente auf Spaltenrichtung */
+    }
+
+    #topMenu .logo {
+        margin: 0 auto 10px auto; /* Zentriert das Logo und fügt unten etwas Abstand hinzu */
+        order: -1; /* Positioniert das Logo an erster Stelle */
+    }
+
+    #topMenu .logo img {
+        max-height: 40px; /* Anpassung der Logo-Größe für kleinere Bildschirme */
+    }
+}
