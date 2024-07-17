@@ -40,9 +40,9 @@
 
     <section id="topMenu">
         <div class="container">
-            <a class="logo" href="<?= $Wcms->url() ?>">
-                <img src="<?= $Wcms->asset('img/logo.png') ?>" alt="Logo" class="img-fluid">
-            </a>
+         <!--   <a class="logo" href="<<?= $Wcms->url() ?>">
+                <img src="<<?= $Wcms->asset('img/logo.png') ?>" alt="Logo" class="img-fluid">
+            </a>-->
             <nav>
                 <ul class="navbar-nav">
                     <?= $Wcms->menu() ?>
