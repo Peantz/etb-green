@@ -33,7 +33,7 @@
         </div>
     </section>
 
-    <div id="wrapper" class="container">
+    <div id="wrapper" class="container mt-5">
         <section id="intro" class="py-5">
             <div class="inner text-center">
                 <?= $Wcms->page('content') ?>
