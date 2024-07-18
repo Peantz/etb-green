@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="<?= $Wcms->asset('css/style.css') ?>">
 
     <!-- ICON -->
-    <link rel="icon" href="http://example.com/favicon.png">
+    <link rel="icon" href="https://bauersite.b1ggi.ovh/data/files/favicon.png">
      
 </head>
 
