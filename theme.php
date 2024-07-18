@@ -7,6 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?></title>
+    <meta name="title" content="<?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?>" />
+    <meta name="description" content="<?= $Wcms->page('description') ?>">
+    <meta name="keywords" content="<?= $Wcms->page('keywords') ?>">
+    <meta property="og:url" content="<?= $Wcms->getCurrentPageUrl() ?>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="<?= $Wcms->get('config', 'siteTitle') ?>" />
+    <meta property="og:title" content="<?= $Wcms->page('title') ?>" />
+    <meta name="twitter:title" content="<?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?>" />
+    <meta name="twitter:description" content="<?= $Wcms->page('description') ?>" />
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="<?= $Wcms->asset('css/style.css') ?>">
