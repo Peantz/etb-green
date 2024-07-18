@@ -51,7 +51,7 @@
         </section>
     </div>
 
-    <footer class="bg-dark text-white py-4">
+    <footer>
         <div class="container text-center">
             <?= $Wcms->footer() ?>
         </div>
