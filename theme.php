@@ -56,6 +56,8 @@
             <div class="inner">
                 <!-- Main content for each page -->
                 <?= $Wcms->page('content') ?>
+                <?=scrollFunction()?>
+                <?=topFunction()?>
             </div>
         </section>
 
