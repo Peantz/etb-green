@@ -1,3 +1,4 @@
+<?php
 // Function for Image galery
 function displayImgFunction(imgs) {
   var expandImg = document.getElementById("expandedImg");
@@ -27,3 +28,4 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+?>
