@@ -25,7 +25,7 @@
     <?= $Wcms->settings() ?>
     <?= $Wcms->alerts() ?>
 
-    <section id="topMenu" class="bg-dark">
+    <section id="topMenu">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="<?= $Wcms->url() ?>">
