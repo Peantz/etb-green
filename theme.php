@@ -1,8 +1,3 @@
-<?php
-// Include the custom functions file
-include_once 'functions.php';
-?>
-
 <?php global $Wcms ?>
 
 <!DOCTYPE html>
