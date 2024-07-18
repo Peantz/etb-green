@@ -30,11 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" rel="preload" as="style" href="<?= $Wcms->asset('css/style.css') ?>">
-
-    <!-- ICON
-    <link rel="icon" href="http://example.com/favicon.png">
-     -->
+    <link rel="stylesheet" href="<?= $Wcms->asset('css/style.css') ?>">
 </head>
 
 <body>
@@ -42,22 +38,27 @@
     <?= $Wcms->settings() ?>
     <?= $Wcms->alerts() ?>
 
-    <section id="topMenu">
+    <section id="topMenu" class="bg-light">
         <div class="container">
-         <!--   <a class="logo" href="<<?= $Wcms->url() ?>">
-                <img src="<<?= $Wcms->asset('img/logo.png') ?>" alt="Logo" class="img-fluid">
-            </a>-->
-            <nav>
-                <ul class="navbar-nav">
-                    <?= $Wcms->menu() ?>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="<?= $Wcms->url() ?>">
+                    <img src="<?= $Wcms->asset('img/logo.png') ?>" alt="Logo" class="img-fluid" style="max-height: 50px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <?= $Wcms->menu() ?>
+                    </ul>
+                </div>
             </nav>
         </div>
     </section>
 
-    <div id="wrapper">
-        <section id="intro" class="wrapper style1 fullscreen">
-            <div class="inner">
+    <div id="wrapper" class="container">
+        <section id="intro" class="py-5">
+            <div class="inner text-center">
                 <!-- Main content for each page -->
                 <?= $Wcms->page('content') ?>
             </div>
@@ -66,14 +67,13 @@
         <!-- Static editable block, same on each page -->
         <!--<section class="wrapper style2">
             <div class="inner">
-
-                <<?= $Wcms->block('subside') ?>
+                <?= $Wcms->block('subside') ?>
             </div>
         </section>-->
     </div>
 
-    <footer class="wrapper style2">
-        <div class="inner">
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
             <!-- Footer -->
             <?= $Wcms->footer() ?>
         </div>
@@ -83,4 +83,7 @@
     <?= $Wcms->js() ?>
 
     <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBhC3ANr3bbfn1pqaFb4Fw/jpEj9Da9bzS0zZ9N4pGvi3P
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBhC3ANr3bbfn1pqaFb4Fw/jpEj9Da9bzS0zZ9N4pGvi3P6X" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeo5zW+edzt7Id7b8xt6U6fX5EaqoTPOxM+VZpfgPKR0UL0B" crossorigin="anonymous"></script>
+</body>
+</html>
