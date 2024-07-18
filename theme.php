@@ -31,6 +31,10 @@
 
     <!-- Theme CSS -->
     <link rel="stylesheet" rel="preload" as="style" href="<?= $Wcms->asset('css/style.css') ?>">
+
+    <!-- ICON
+    <link rel="icon" href="http://example.com/favicon.png">
+     -->
 </head>
 
 <body>
