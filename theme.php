@@ -15,9 +15,9 @@
     <?= $Wcms->settings() ?>
     <?= $Wcms->alerts() ?>
 
-    <section id="topMenu" class="bg-light">
+    <section id="topMenu" class="bg-dark">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="<?= $Wcms->url() ?>">
                     <img src="<?= $Wcms->asset('img/logo.png') ?>" alt="Logo" class="img-fluid" style="max-height: 50px;">
                 </a>
