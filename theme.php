@@ -62,6 +62,22 @@
         </div>
     </section>
 
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <?php
+            $breadcrumb = '';
+            $url = '';
+            $parts = explode('/', trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/'));
+            foreach ($parts as $part) {
+                $url .= '/' . $part;
+                $breadcrumb .= '<li class="breadcrumb-item"><a href="' . $url . '">' . ucfirst($part) . '</a></li>';
+            }
+            echo $breadcrumb;
+            ?>
+        </ol>
+    </nav>
+
     <div id="wrapper">
         <section id="intro" class="wrapper style1 fullscreen">
             <div class="inner">
