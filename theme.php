@@ -71,7 +71,8 @@
             $parts = explode('/', trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/'));
             foreach ($parts as $part) {
                 $url .= '/' . $part;
-                $breadcrumb .= '<li class="breadcrumb-item"><a href="' . $url . '">' . ucfirst($part) . '</a></li>';
+                $decodedPart = urldecode($part);
+                $breadcrumb .= '<li class="breadcrumb-item"><a href="' . $url . '">' . ucfirst($decodedPart) . '</a></li>';
             }
             echo $breadcrumb;
             ?>
