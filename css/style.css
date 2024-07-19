@@ -294,7 +294,7 @@ input[type="password"] {
 
 /* Menu */
 #topMenu {
-    padding: 1em 0;
+    padding: 0.5em 0; /* Reduced padding to make the navbar smaller */
     background-color: #565656;
     cursor: default;
     text-align: center;
@@ -305,7 +305,7 @@ input[type="password"] {
 }
 
 #topMenu .container {
-    display: block ruby;
+    display: flex; /* Changed to flex for better alignment */
     justify-content: space-between;
     align-items: center;
 }
@@ -326,7 +326,7 @@ input[type="password"] {
 }
 
 #topMenu nav ul li a {
-    padding: 0.75em 1.5em;
+    padding: 0.5em 1em; /* Reduced padding to make links smaller */
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
@@ -364,7 +364,7 @@ input[type="password"] {
 }
 
 #topMenu .logo img {
-    max-height: 50px;
+    max-height: 40px; /* Reduced logo size */
 }
 
 @media (max-width: 768px) {
@@ -387,6 +387,7 @@ input[type="password"] {
         padding-left: 2em;
     }
 }
+
 /*Back to top Button*/
 #myBtn {
   display: none;
