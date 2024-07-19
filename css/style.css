@@ -338,6 +338,11 @@ input[type="password"] {
     color: #32CD32;
 }
 
+/* Active link */
+#topMenu nav ul li a.active {
+    color: #32CD32; /* Active link color */
+}
+
 /* Submenu */
 #topMenu nav ul li ul {
     display: none;
@@ -387,6 +392,7 @@ input[type="password"] {
         padding-left: 2em;
     }
 }
+
 
 /*Back to top Button*/
 #myBtn {
