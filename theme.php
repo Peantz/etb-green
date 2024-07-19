@@ -50,7 +50,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <?= $Wcms->menu() ?>
+                        <?php
+                        $menuItems = $Wcms->menu();
+                        $currentUrl = $Wcms->getCurrentPageUrl();
+                        $menuItems = str_replace('<a href="' . $currentUrl . '">', '<a href="' . $currentUrl . '" class="active">', $menuItems);
+                        echo $menuItems;
+                        ?>
                     </ul>
                 </div>
             </nav>
@@ -87,3 +92,5 @@
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
